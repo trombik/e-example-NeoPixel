@@ -1,5 +1,7 @@
 # Example project of WS2812B, aka NeoPixel, for testing
 
+[![Build Status](https://travis-ci.org/trombik/e-example-NeoPixel.svg?branch=master)](https://travis-ci.org/trombik/e-example-NeoPixel)
+
 This project builds [one of
 example](https://github.com/adafruit/Adafruit_NeoPixel/tree/master/examples/strandtest)
 from [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) for
