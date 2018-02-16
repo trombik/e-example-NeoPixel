@@ -26,4 +26,5 @@ env:
 install:
   - pip install -U platformio
 script:
+  - pio lib install
   - platformio ci --board attiny85
