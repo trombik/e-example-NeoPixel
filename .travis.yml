@@ -21,10 +21,8 @@ cache:
   directories:
     - "~/.platformio"
 
-env:
-  - PLATFORMIO_CI_SRC=src/strandtest.ino
 install:
   - pip install -U platformio
+
 script:
-  - pio lib install
-  - platformio ci --board attiny85
+  - platformio run
