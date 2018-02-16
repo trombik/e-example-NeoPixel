@@ -23,6 +23,8 @@ cache:
 
 install:
   - pip install -U platformio
+  - apt-get install cppcheck
 
 script:
-  - platformio run
+  - platformio run -v
+  - cppcheck --error-exitcode=1 --enable=warning,style,performance,portability -v --language=c++ src/*.ino src/*.cpp lib/*.cpp
