@@ -20,10 +20,13 @@ sudo: false
 cache:
   directories:
     - "~/.platformio"
+addons:
+  apt:
+    packages:
+      - cppcheck
 
 install:
   - pip install -U platformio
-  - apt-get install cppcheck
 
 script:
   - platformio run -v
