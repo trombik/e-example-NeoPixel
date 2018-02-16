@@ -16,7 +16,18 @@
 language: python
 python:
   - "2.7"
+sudo: false
+cache:
+  directories:
+    - "~/.platformio"
+addons:
+  apt:
+    packages:
+      - cppcheck
+
 install:
   - pip install -U platformio
+
 script:
-  - platformio run
+  - platformio run -v
+  - cppcheck --error-exitcode=1 --enable=warning,style,performance,portability -v --language=c++ src/*.ino src/*.cpp lib/*.cpp
