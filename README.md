@@ -13,6 +13,8 @@ testing, using platform.io.
 
 ## Usage
 
+See [schematics](output.svg).
+
 Build the source.
 
 ```
